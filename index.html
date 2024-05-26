@@ -21,9 +21,12 @@
         <header class="header">
           <a class="header--logo" href="#0">
             <img src="assets/img/logo.png" width="100" height="100" alt="Global">
-            <p>Gioele Giunta</p>
+            <p class="mobile-none">Gioele Giunta</p>
           </a>
-
+          <a role="button" class="square-button" style=" margin-top: 15px;" href="https://www.linkedin.com/in/gioele-giunta-58314b203/" target="_blank">Hire Me</a>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
         </header>
         <nav class="l-side-nav">
           <ul class="side-nav">
@@ -44,7 +47,7 @@
                 <h1>Hi!<h1 style="font-size: 52px;"> I am Gioele Giunta</h1><h4>Sicilian-born Gioele (Malta-based) nurtured a <br> passion for computer science at 13. <br> Now pursuing a Computer Engineering degree, <br> his dedication has equipped him with a <br> strong foundation in mobile, web, <br> and embedded systems development. <br> A proactive learner, Gioele stays updated <br> on the latest tech.</h4>
                 <img src="assets/img/profile.jpeg" class="profile-image" alt="Gioele">
               </div>
-              <a role="button" class="primary-button z-index-1000" href="curriculum.pdf" target="_blank">View my CV</a>
+              <a role="button" class="primary-button z-index-1000" href="./curriculum.pdf" target="_blank">View my CV</a>
             </div>
             
             <div class="scrolling--logo">
@@ -87,7 +90,7 @@
                   </div>
                 </div>
               </div>
-              <a role="button" class="primary-button z-index-1000" href="https://appetize.io/app/2yh4ykzhhv6gsm546kitygx4jy?device=pixel7&osVersion=13.0" target="_blank">View Project (2013 App)</a>
+              <a role="button" class="primary-button z-index-1000" href="https://appetize.io/app/2yh4ykzhhv6gsm546kitygx4jy?device=nexus5&osVersion=11.0" target="_blank">View Project (2013 App)</a>
               <h2 class="mobile-none">Acquired skills</h2>
               <div class="work--lockup">
                 <ul class="slider" data-slider="1">
@@ -736,31 +739,32 @@
             <div class="about" >
               <div class="about--banner" >
                 <a class="title--logo" href="#0">
-                  <div style="box-shadow: 34em 0 40000px 6000px rgba(255, 200, 221, 0.74)"></div>
-                  <img src="assets/img/logos/axiscoin_logo.png" alt="AxisCoin">
+                  <div style="box-shadow: 34em 0 40000px 6000px #65aaeb56"></div>
+                  <img src="assets/img/logos/restaurant_logo.png" alt="AxisCoin">
                   <div>
-                    <h1>2021: Axis Coin</h1>
+                    <h1>2024: Los Pollos Hermanos</h1>
                     <p>Demo</p>
                   </div>
                 </a>
                 <h1></h1>
                 <div class="row--box--dynamic">
                   <div class="flex--element text--box">
-                    <h3>Axis Coin was a demo for university purposes.</h3>
+                    <h3>Los Pollos Hermanos was a demo for university purposes.</h3>
                       <ul>
-                        <li>It consists of: a web platform created using the latest technologies, such as Bootstrap, HTML5, and CSS3, allowing access, document verification, and the buying and selling of a virtual token.</li>
-                        <li>The virtual accounts are stored on a MySQL database, along with the user's status (active, to be verified, suspended) and the user's related data.</li>
-                        <li>It also possesses a real-time notification system, without using pre-existing frameworks or libraries.</li>
+                        <li>It consists of: a web platform created using the latest technologies, such as Twig, HTML5 and CSS3, which allows the display of a restaurant's dishes.</li>
+                        <li>Virtual accounts are stored in a MySQL database, along with the user's reservations and favorite dishes.</li>
+                        <li>Furthermore, there is a system for generating backgrounds and foodsliders responsible for dynamic food selection.</li>
                       </ul>
                   </div>
                   <div class="flex--element background--box">
                     <div class="row--box">
-                      <img class="background--explanation" style="margin-right: -30%;" src="assets/img/frames/axiscoin-portrait.png" alt="AxisCoin Portrait">
-                      <img class="background--explanation" style="margin-left: 20%; border: #c0c0c0 5px solid; border-radius: 10px;" src="assets/img/frames/axiscoin-landscape.png" alt="AxisCoin Portrait">
+                      <img class="background--explanation" style="margin-right: -30%;" src="assets/img/frames/restaurant-portrait.png" alt="LPH Portrait">
+                      <img class="background--explanation" style="margin-left: 20%; border: #c0c0c0 5px solid; border-radius: 10px;" src="assets/img/frames/restaurant-landscape.png" alt="LPH Portrait">
                     </div>
                   </div>
                 </div>
               </div>
+              <button role="button" class="primary-button z-index-1000" href="" target="_blank" disabled>Explore Project</button>
               <h2 class="mobile-none">Acquired skills</h2>
               <div class="work--lockup">
                 <ul class="slider" data-slider="7">
@@ -776,13 +780,22 @@
                   <li class="slider--item slider--item-center" data-slider="7">
                     <a href="#0">
                       <div class="slider--item-image">
+                        <img src="assets/img/skills/twig.png" alt="Twig">
+                      </div>
+                      <p class="slider--item-title">Twig</p>
+                      <p class="slider--item-description">Develop semantic web pages, Enhance accessibility, Leverage new PHP features</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right" data-slider="7">
+                    <a href="#0">
+                      <div class="slider--item-image">
                         <img src="assets/img/skills/html5.png" alt="HTML">
                       </div>
                       <p class="slider--item-title">HTML 5</p>
                       <p class="slider--item-description">Develop web pages, Use semantic markup, Enhance accessibility, Leverage new features</p>
                     </a>
                   </li>
-                  <li class="slider--item slider--item-right" data-slider="7">
+                  <li class="slider--item" data-slider="7">
                     <a href="#0">
                       <div class="slider--item-image">
                         <img src="assets/img/skills/javascript.png" alt="Javascript">
@@ -798,15 +811,6 @@
                       </div>
                       <p class="slider--item-title">jQuery</p>
                       <p class="slider--item-description">Simplify DOM manipulation, Enhance event handling, Streamline AJAX interactions, Leverage plugins</p>
-                    </a>
-                  </li>
-                  <li class="slider--item" data-slider="7">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/skills/bootstrap.png" alt="Bootstrap">
-                      </div>
-                      <p class="slider--item-title">Bootstrap</p>
-                      <p class="slider--item-description">Develop responsive layouts, Implement pre-designed components, Customize UI styles, Accelerate development</p>
                     </a>
                   </li>
                   <li class="slider--item" data-slider="7">
@@ -991,6 +995,16 @@
     <li>Hire us</li>
   </ul>-->
 </div>
+<ul class="outer-nav">
+  <li class="is-active"><span>2001</span></li>
+  <li><span>2014</span></li>
+  <li><span>2016</span></li>
+  <li><span>2018</span></li>
+  <li><span>2021</span></li>
+  <li><span>2022</span></li>
+  <li><span>2024</span></li>
+  <li><span>2024</span></li>
+</ul>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>

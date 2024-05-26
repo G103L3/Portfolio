@@ -428,24 +428,18 @@ body {
     transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    width: 100vw;
     height: 70px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     z-index: 10;
+    background-color: white;
+    padding: 0 10vw;
+    justify-content: space-between;
 }
 .header--logo {
     display: -webkit-box;
@@ -486,6 +480,8 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
+    float: right;
+    margin-right: 30vw;
 }
 .header--nav-toggle span,
 .header--nav-toggle::before,
@@ -607,7 +603,7 @@ body {
     content: "DTMF Decoder";
 }
 .side-nav li:nth-child(8)::before {
-    content: "Restaurant Website";
+    content: "LPH";
 }
 
 
@@ -1935,6 +1931,14 @@ body {
 }
 
 
+@media (max-width: 900px) {
+    .scrolling--logo {
+
+        bottom: 0px;
+
+    }
+}
+
 
 
 /* Buttons */
@@ -1980,4 +1984,60 @@ body {
   .primary-button:disabled {
     background-color: var(--primary-disabled-color);
     cursor: not-allowed;
+  }
+
+
+  /* Buttons */
+.square-button {
+    max-width: 250px;
+    display: inline-block;
+    background-color: var(--c-color);
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    border: none;
+    padding-left: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    padding-right: 40px; /* Aggiungi un po' di spazio per la freccia */
+    text-decoration: none;
+  }
+
+  .square-button::after {
+    content: "→";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+  
+  .square-button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--primary-color);
+  }
+  
+  .square-button:active {
+    background-color: rgba(var(--primary-color), 0.2);
+    box-shadow: 0 0 0 3px var(--primary-color);
+    transform: translateY(2px);
+    color: var(--primary-color);
+  }
+  
+  .square-button:disabled {
+    background-color: var(--primary-disabled-color);
+    cursor: not-allowed;
+  }
+
+  @media(max-width: 900px){
+    .square-button {
+        font-size: 15px;
+      }
+      .primary-button {
+
+        font-size: 13px;
+
+      }
   }
