@@ -642,7 +642,7 @@
             <div class="about">
               <div class="about--banner">
                 <a class="title--logo" href="#0">
-                  <div style="box-shadow: 34em 0 40000px 6000px rgba(255, 255, 255, 0.2);"></div>
+                  <div style="box-shadow: 34em 0 40000px 6000px #f8ff3527;"></div>
                   <img src="assets/img/logos/dtmf_logo.png" alt="DTMF Decoder">
                   <div>
                     <h1>2024: DTMF Decoder</h1>
@@ -652,11 +652,15 @@
                 <h1></h1>
                 <div class="row--box--dynamic">
                   <div class="flex--element text--box">
-                    <h3>The DTMF Decoder is a university project aimed at decoding the tone of each individual DTMF button through programming the LPC4088 board.</h3>
+                    <h3>This project implements a DTMF decoder for the LPC4088 microcontroller. The system acquires audio signals, analyzes them to identify corresponding DTMF tones, and displays them as characters on an LCD display.</h3>
+                    <h3>Key Features: </h3>
                     <ul>
-                      <li>Assembly language is required for its realization, as low-level programming is necessary to increase the speed of the system due to the very fast tone emission and the use of Arm Cortex-M4 that is a 32bit Architecture</li>
-                      <li>Various mechanisms have been created to listen for interrupts and subsequently resolve input.</li>
-                      <li>The system also eliminates noises with frequencies higher and lower than DTMF.</li>
+                      <li>Decodes DTMF tones using Goertzel or FFT algorithms</li>
+                      <li>Displays corresponding characters on an LCD display</li>
+                      <li>System calibration for optimized performance</li>
+                      <li>Decoding algorithm selection (Goertzel or FFT)</li>
+                      <li>Automatic display scrolling for character sequences</li>
+                      <li>Manual display navigation using a joystick</li>
                     </ul>
                   </div>
                   <div class="flex--element background--box">
@@ -666,6 +670,7 @@
                   </div>
                 </div>
               </div>
+              <a role="button" class="primary-button z-index-1000" href="https://github.com/G103L3/DTMF-Decoder-in-C-for-Cortex-M4" target="_blank">Explore Project</a>
               <h2 class="mobile-none">Acquired skills</h2>
               <div class="work--lockup">
                 <ul class="slider" data-slider="6">
